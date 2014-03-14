@@ -189,7 +189,7 @@ void CCSceneManager::replaceScene(CCSceneExtension* pScene, CCObject* pExtra)
 
 	ccSCENESWITCH tSceneSwitch;
 	tSceneSwitch.pNextScene = pScene;
-	tSceneSwitch.pExtra = NULL;
+	tSceneSwitch.pExtra = pExtra;
 	tSceneSwitch.eType = eSceneSwitchReplaceScene;
 	tSceneSwitch.bLockedSwitch = true;
 
